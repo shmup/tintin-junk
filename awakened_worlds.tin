@@ -1,0 +1,6 @@
+#event {SESSION CONNECTED}
+{
+  #var {session[name]} {%0};
+};
+
+#session {awakened_worlds} {awakenedworlds.net} {4000}

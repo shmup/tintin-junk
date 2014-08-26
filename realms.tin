@@ -1,0 +1,9 @@
+#event {SESSION CONNECTED}
+{
+  #var {session[name]} {%0};
+};
+
+#session {realms} {realmsofdespair.com} {4000}
+
+#action {You disappear into the void.} {look;gold}
+#action {To escape Limbo, type a command or say "return" ...} {look;gold}

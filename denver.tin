@@ -1,0 +1,6 @@
+#event {SESSION CONNECTED}
+{
+  #var {session[name]} {%0};
+};
+
+#session {aelfhame.net} {aelfhame.net} {1999}
