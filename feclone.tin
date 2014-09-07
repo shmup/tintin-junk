@@ -1,0 +1,38 @@
+#event {SESSION CONNECTED}
+{
+  #var {session[name]} {%0};
+};
+
+#session {feclone} {feclone.mudhosting.net} {1111}
+
+#alias d {dodge left}
+#alias dl {dodge right}
+#alias g {dodge right}
+#alias dr {dodge right}
+#alias f {parry high}
+#alias v {parry low}
+#alias j {jump}
+#alias m {duck}
+#alias c {deflect}
+
+#alias u {punch right}
+#alias i {punch left}
+#alias pr {punch right}
+#alias pl {punch left}
+#alias o {sweep}
+#alias r {roundhouse}
+
+#alias n {north}
+#alias s {south}
+#alias w {west}
+#alias e {east}
+
+#alias fn {fly 5 north}
+#alias fs {fly 5 south}
+#alias fe {fly 5 east}
+#alias fw {fly 5 west}
+
+#alias fnw {fly 5 nw}
+#alias fne {fly 5 ne}
+#alias fsw {fly 5 sw}
+#alias fse {fly 5 se}

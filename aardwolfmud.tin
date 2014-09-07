@@ -1,0 +1,6 @@
+#event {SESSION CONNECTED}
+{
+  #var {session[name]} {%0};
+};
+
+#session {aardwolf} {aardmud.org} {4000}
