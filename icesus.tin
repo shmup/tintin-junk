@@ -8,9 +8,39 @@
 
 #NOC #gag {^$};
 
+#alias {log} {
+    #if {"%0" == "on"} {
+		#if {"$logging" != "on"} {
+			#format {logfile} {~/Dropbox/logs/%t.html} {%Y-%m-%d};
+			#log append $logfile;
+			#var logging on
+		};
+		#else {
+			#showme You are already logging.
+		}
+	};
+	#elseif {"%0" == "off"} {
+		#if {"$logging" == "on"} {
+			#log off;
+			#var logging off
+		};
+		#else {
+			#showme You are not logging.
+		}
+	};
+	#else {
+		#showme Turn logging on or off?
+	}
+}
+
 #alias wh   {d;e;s;e;s;e;e;s;s;s;e;e;e;e}
 #alias home {w;w;w;w;n;n;n;w;w;n;w;n;w;u}
 #alias dg   {dig grave}
 #alias lc   {loot corpse}
 
+#read prefs.tin
+
 #ses icesus icesus.org 23
+Lobsang $pass
+look
+switch to a
