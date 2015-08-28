@@ -41,6 +41,7 @@
 #read prefs.tin
 
 #ses icesus icesus.org 23
-Lobsang $pass
+Lobsang
+$pass
 look
 switch to a
